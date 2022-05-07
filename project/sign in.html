@@ -1,0 +1,263 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sign{
+            width: 40%;
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: auto;
+            margin-top: 12%;
+        }
+        h2{
+            text-align: center;
+            font-size: 35px;
+        }
+        p{
+            text-align: center;
+            font-size: 25px;
+            color: grey;
+        }
+        input{
+            margin-left: 30%;
+            padding: 10px 12px 10px 12px;
+            border-radius: 10px;
+            font-size: 25px;
+            border-color: grey;
+            margin-bottom: 8px;
+        }
+        button{
+            margin-left: 45%;
+            margin-top: 10px;
+            padding: 15px 25px 15px 25px;
+            border-radius: 15px;
+            background-color: teal;
+            color: white;
+            border: 1px solid black;
+            cursor: pointer;
+            font-size: 25px;
+
+        }
+       
+        
+        button>a{
+            color: white;
+            text-decoration: none;
+            border: 0px;
+            font-size: 25px;
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="nav">
+        <div class="text">
+            <button1><a href="sign in.html">sign in</a></button1> -->
+            <!-- <div class="sign">
+                <h2>Sign in with your Apple ID</h2>
+                <p>You will be signed in to Apple TV and Apple Music</p>
+                <input type="text" placeholder="Apple ID">
+                <input type="text" placeholder="Passaward"> <br>
+                <button><a href="index.html">sign in</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> --> 
+
+<!-- <script>
+    localStorage.setItem("id", sachin, "passaward",123456);
+  </script> -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+         .login-page {
+                width: 400px;
+                height: 800px;
+                /* margin-top: 300px; */
+                padding: 3% 10% 1%;
+                margin: auto;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border-radius: 20px;
+                box-shadow: width="200px";
+                
+            }
+             .form {
+                position: relative;
+                z-index: 1;
+                background: none(7, 40, 195, 0.8);
+                max-width: 380px;
+                margin: 0 auto 100px;
+                padding: 45px;
+                text-align: center;
+                
+            }
+            .form>h5{
+                font-size: 30px;
+                margin-bottom: 6%;
+                /* font-family: 'Open Sans', sans-serif; */
+                width: 500px;
+                margin-left: -100px;
+               
+            }
+            .form>img{
+                width: 70px;
+                color: grey;
+            }
+            h3{
+                width: 500px;
+                margin-left: -100px;
+                color: grey;
+            }
+           
+
+            .form input {
+                font-family: "Roboto", sans-serif;
+                outline: 1;
+                background: #f2f2f2;
+                width: 100%;
+                border: 1PX solid gray;
+                margin: 0 0 15px;
+                padding: 20px;
+                box-sizing: border-box;
+                font-size: 14px;
+            }
+
+            .form button {
+                font-family: "Roboto", sans-serif;
+                text-transform: uppercase;
+                outline: 0;
+                background: black;
+                width: 100%;
+                border: 0;
+                padding: 25px;
+                color: #FFFFFF;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            .form button:hover,
+            .form button:active {
+                background: red;
+            }
+
+            .form .massage {
+                margin: 15px 0 0;
+                color: black;
+                font-size: 12px;
+            }
+
+
+            .form .massage a {
+                color: RED;
+            }
+
+            /* .form .register-form {
+                display: relative;
+
+            } */
+
+            .massage {
+                color: white;
+            }
+      </style>
+  </head>
+  <body>
+    <div class="Login-page">
+        <div class="form">
+            <img src="https://mspoweruser.com/wp-content/uploads/2019/05/apple-logo.png" alt="">
+            
+            <h5>Sign in with your Apple ID</h5>
+            <h3>You will be signed in to Apple TV and Apple Music</h3>
+            <form class="Register-form">
+            <input type="text" placeholder="Apple ID"/ class="RegisterName">
+            <input type="password" placeholder="Password"/ class="RegisterPass">
+            <button  onclick="regform()">Create Account</button>
+            <p class="massage">Already Rejestered? <a href="#">SING UP</a></p>
+            </form>
+
+            <form class="login-form">
+            <input type="text" placeholder="Apple ID" class="formName"/>
+            <input type="password" placeholder="Password" class="formPass"/>
+            <button onclick="loginform()">Login</button>
+            <p class="massage">Create New Apple ID ><a href="#">SING UP</a></p>
+
+        </div>
+        </div>
+
+       
+        <script>
+        $('.massage a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });    
+
+        </script>
+   
+
+   <script>
+        $('.massage a').click(function () {
+            $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+        });
+
+        document.querySelector(".login-form").addEventListener("submit", loginform)
+
+        function regform() {
+            event.preventDefault()
+
+            var usr = document.querySelector(".RegisterName")
+            var pass = document.querySelector(".RegisterPass")
+           
+            var obj = {
+                name: usr.value,
+                password: pass.value,
+               
+            }
+            var arr = []
+            console.log(obj)
+            arr.push(obj)
+            localStorage.setItem("userCredential", JSON.stringify(arr))
+            alert("Sign Up Sucess Full!")
+
+            usr.value = ""
+            pass.value = ""
+            
+        }
+        function loginform() {
+
+            event.preventDefault()
+            var userData = JSON.parse(localStorage.getItem("userCredential")) || []
+            console.log("sdfjks")
+            if (!(Boolean(userData))) {
+                alert("SING UP First")
+                return;
+            }
+            var usr = document.querySelector(".formName").value
+            var pass = document.querySelector(".formPass").value
+
+            var c = 0
+            userData.map(function (ele) {
+
+                if (ele.name == usr && ele.password == pass) {
+                    alert("SING UP SUCCESSFULLY \n Moving to Home Page")
+                    window.location.href = "index.html"
+                    c++
+                    return;
+                }
+            })
+            if (c == 0) alert("User Name or Password Doesnt Match")
+
+        }
+
+    </script>
+  </body>
+  </html>

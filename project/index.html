@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .nav{
+            width: 100%;
+            background-color: black;
+            display: flex;
+            height: 80px;
+            position: fixed;
+        }
+        h6>img{
+            width: 8%;
+            cursor: pointer;
+            margin-left: 25px;
+        }
+
+        button1{
+            color: white;
+            background-color: rgb(20, 77, 234);
+            height: 4px;
+            border-radius: 20px;
+            padding: 12px 15px 43px 15px;
+            /* border: 1px solid red; */
+            font-size: 30px;
+            margin-top: 10px;
+            margin-left: 60%;
+            margin-right: -10px;
+            cursor: pointer;
+        }
+        button1>a{
+            text-decoration: none;
+            color: white;
+            /* margin-top: 150px; */
+        }
+
+    .logo{
+            width: 125%;
+        
+        }
+        .text{
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+        }
+       #container1{
+           background: url("https://www.supereasy.com/wp-content/uploads/2021/08/ted-lasso-300x198.jpg");
+           background-size: cover;
+           background-blend-mode: darken;
+           height: 1060px;
+       }
+       h1{
+           text-align: center;
+           color: white;
+           font-size: 110px;
+           padding-top: 700px;
+           
+       }
+       h2{
+           text-align: center;
+           color: white;
+           margin-top: 30px;
+           font-size: 35px;
+       }
+       button{
+          padding: 15px 80px 15px 80px;
+          margin-left: 750px;
+          font-size: 20px;
+          border-radius: 20px;
+          cursor: pointer;
+          margin-top: 38px;
+       }
+       p{
+           text-align: center;
+           color: white;
+           margin-top: 7px;
+       }
+       h3{
+           font-size: 25px;
+           margin-left: 35px;
+           margin-top: 10px;
+       }
+       #container2{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: repeat(1,1fr);
+           gap: 5px;
+           margin-left: 45px;
+           margin-top: 23px;
+           width: 95%;
+       }
+      
+       #container2>div>img{
+           width: 95%;
+           border-radius: 20px;
+           height: 110%;
+           cursor: pointer;
+       }
+       hr{
+           margin-top: 50px;
+       }
+       /* #container2>img{
+           height: 40px;
+       } */
+       #container3{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+       }
+      
+       #container3>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 110%;
+           cursor: pointer;
+       }
+       hr{
+           margin-top: 50px;
+       }
+
+       #container4{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+       }
+      
+       #container4>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 67%;
+           cursor: pointer;
+       }
+       hr{
+           margin-top: 90px;
+       }
+       h4{
+          font-size: 20px;
+          margin-bottom: 150x;
+
+       }
+       h5{
+           color: grey;
+
+
+       }
+       p1{
+           color: grey;
+           margin-bottom: -10px;
+       }
+       #container5{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;  
+       }
+       #container5>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 100%;
+           cursor: pointer;
+       }
+       p2{
+           color: grey;
+           margin-top: -1000px;
+           margin-left: 35px;
+       }
+
+       #container6{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;  
+       }
+       #container6>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 100%;
+           cursor: pointer;
+       }
+       p2{
+           color: grey;
+           margin-top: -1000px;
+           margin-left: 35px;
+       }
+
+       #container7{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+       }
+      
+       #container7>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 110%;
+           cursor: pointer;
+       }
+       hr{
+           margin-top: 50px;
+       }
+       
+       #container8{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+       }
+      
+       #container8>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 110%;
+           cursor: pointer;
+       }
+       hr{
+           margin-top: 50px;
+       }
+
+       #container9{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+       }
+      
+       #container9>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 110%;
+           cursor: pointer;
+       }
+       hr{
+           margin-top: 50px;
+       }
+       #container10{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+       }
+
+       #container10>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 67%;
+           cursor: pointer;
+       }
+       hr{
+           margin-top: 90px;
+       }
+       h4{
+          font-size: 20px;
+          margin-top: -10px;
+       }
+       h5{
+           color: grey;
+       }
+       p1{
+           color: grey;
+           margin-bottom: -10px;
+       }
+
+       #container11{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+        
+       }
+      
+       #container11>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 110%;
+           cursor: pointer;
+       }
+       hr{
+           margin-top: 50px;
+       }
+
+       #container12>img{
+        display: grid;
+           grid-template-columns: repeat(1,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+           height: 550px;
+           border-radius: 20px;
+       }
+
+       #container13{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+       }
+      
+       #container13>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 110%;
+           cursor: pointer;
+       }
+       hr{
+           margin-top: 50px;
+       }
+
+       #container14{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;  
+       }
+       #container14>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 100%;
+           cursor: pointer;
+       }
+       p2{
+           color: grey;
+           margin-top: -1000px;
+           margin-left: 35px;
+       }
+
+       #container15{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+       }
+      
+       #container15>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 110%;
+           cursor: pointer;
+       }
+       hr{
+           margin-top: 50px;
+       }
+
+       #container16{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;  
+       }
+       #container16>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 100%;
+           cursor: pointer;
+       }
+       p2{
+           color: grey;
+           margin-top: -1000px;
+           margin-left: 35px;
+       }
+
+       #container17{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+       }
+      
+       #container17>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 110%;
+           cursor: pointer;
+       }
+       hr{
+           margin-top: 50px;
+       }
+
+       #container19{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+       }
+      
+       #container19>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 110%;
+           cursor: pointer;
+       }
+       hr{
+           margin-top: 50px;
+       }
+
+       #container18{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;  
+       }
+       #container18>div>img{
+           width: 100%;
+           border-radius: 20px;
+           height: 100%;
+           cursor: pointer;
+       }
+       p2{
+           color: grey;
+           margin-top: -1000px;
+           margin-left: 35px;
+       }
+
+
+
+       #foot{
+            width: auto;
+            height: 650px;
+            background-color: black;
+        }
+        #foot>div{
+            
+            width: 20%;
+            height: auto;
+            margin: auto;
+        }
+        #foot>div>img{
+           width: 80%;
+           background-color: black;
+          /* margin-left: 45%;
+          margin-top: 20px; */
+        }
+        /* #foot>div>img>div{
+          width: 50%;
+          height: auto;
+          margin: auto;
+          border: 1px solid red;
+        } */
+        h8{
+            color: white;
+            margin-top: -25px;
+            margin-left: 20%;
+            font-size: 70px;
+        
+            
+        }
+
+        p3{
+            color: white;
+            font-size: 35px;
+            text-align: center;
+            margin-left: 15%;
+            margin-top: 35%;
+        }
+        p4{
+            color: blue;
+            font-size: 25px;
+            margin-top: 75px;
+            cursor: pointer;
+        }
+
+        #box{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: auto;
+           gap: 20px;
+           margin: auto;
+           margin-top: 20px;
+           width: 95%;
+           border: 1px solid red;
+        }
+
+        
+  </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h6>
+                <img src="https://th.bing.com/th/id/OIP.2FWZ6BdliZ4E6dKzHBqrPQHaEc?pid=ImgDet&rs=1" alt="">
+            </h6>
+        </div>
+        <div class="text">
+            <button1><a href="sign in.html">sign in</a></button1>
+        </div>
+    </div>
+    <div id="container1">
+         <h1>All Apple Originals.</h1>
+        <h2>Exclusively on Apple TV+.Watch here and on the Apple TV app across yuor devices.</h2>
+        <button>Start Free Trial</button>
+        <p>7 days free, then $4.99/month. <br> 3 months free when you buy an eligible Apple device. Tearn apply. Some titles coming later to Apply TV+.</p>
+       </div>
+       <h3>Most Popular Now</h3>
+       <div id="container2">
+         <div>
+           <a href="nextpage.html"><img src="https://is1-ssl.mzstatic.com/image/thumb/QiFf4rD5DY65HbtJUOjE7Q/738x416.webp" alt="" width="96%" height="109%"></a>
+         </div>
+         <div>
+             <img src="https://is4-ssl.mzstatic.com/image/thumb/fiTyznFr4Rsvd25TNhffww/738x416.webp" alt="">
+         </div>
+         <div>
+             <img src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt="">
+         </div>
+         <div>
+             <img src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp" alt="">
+         </div>
+         <div>
+             <img src="https://is1-ssl.mzstatic.com/image/thumb/Tb1jarRHaWN_SFiMjZcDHw/738x416.webp" alt="">
+         </div>
+        </div>
+        <hr>
+
+        <h3>Watch Entire Seasion</h3>
+        <div id="container3">
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/UPoQbHoPte_TFJXEvKIIsw/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/AmQ1cNEzc1DMKH25B5J9aQ/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/dbEKo7rp5RGNNDrCbA7AUQ/738x416.webp" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <h3>Latest Originals</h3>
+        <div id="container4">
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/fiTyznFr4Rsvd25TNhffww/1478x832.webp" alt="">
+                <h5>THRILLER</h5>
+                <h4>Shining Girls</h4>
+                <p1>The survivor of a brutal attack investigates a murder thats linked to her assault</p1>
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/PzRfPYv8-A3pM1Uafiv1qQ/1478x832.webp" alt="">
+                <h5>THRILLER</h5>
+                <h4>Shining Girls</h4>
+                <p1>The survivor of a brutal attack investigates a murder thats linked to her assault</p1>
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/q15eqXAa_XH-L0KIDkPBJA/1478x832.webp" alt="">
+                <h5>THRILLER</h5>
+                <h4>Shining Girls</h4>
+                <p1>The survivor of a brutal attack investigates a murder thats linked to her assault</p1>
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/GwU4Qm-NLXeNi7M5bxpX-g/1478x832.webp" alt="">
+                <h5>THRILLER</h5>
+                <h4>Shining Girls</h4>
+                <p1>The survivor of a brutal attack investigates a murder thats linked to her assault</p1>
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/IryLNqf3vJszRupPX70Elg/1478x832.webp" alt="">
+                <h5>THRILLER</h5>
+                <h4>Shining Girls</h4>
+                <p1>The survivor of a brutal attack investigates a murder thats linked to her assault</p1>
+            </div>
+        </div>
+        <hr>
+        <h3>Major League Baseball</h3>
+        <p2>Add to your Up Next watchlist today</p2>
+        <div id="container5">
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/Features116/v4/e0/bc/b9/e0bcb938-af40-0bda-a0c1-933765af0cf1/U0YtVFZBLVdXLVRlaHJhbi1TMi1DU19Ccmljay5sc3I.lsr/1478x832fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/Features116/v4/c7/01/aa/c701aa8b-6c44-6ed5-a7a0-155f72f07b1b/45638712-6415-4313-ad3f-2f6a8174a62a.lsr/1478x832fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/Features116/v4/5e/85/be/5e85be1b-8d80-63a8-2c99-7d42e99c23ac/060e785c-33d6-467e-9657-fcafe3e83c55.lsr/1478x832fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/b0/1d/62/b01d62d7-c04a-23fa-ce42-5f6a4cd8731e/77ee1957-3699-43b7-afae-c771b5abaa90.lsr/1478x832fe.webp" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <h3>Comming Soon</h3>
+        <p2>Free for a limited time, watch Friday Night Baseball and daily coverage.</p2>
+        <div id="container6">
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/Features116/v4/fe/30/99/fe30991b-023f-65db-6c47-9bcaacab5977/90310982-ea94-40a5-81e4-9d8de34c261e.lsr/1478x832fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/Features126/v4/f4/0a/4a/f40a4ac5-1d02-811d-f16b-9f5516fb7156/e42ffec9-d624-47fc-8dba-674142619205.lsr/1478x832fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Features116/v4/43/bb/de/43bbde5e-e7df-6f87-47ff-7cdfc211dc21/b07c188b-e1a2-4020-a4fc-c3fa00aa22d8.lsr/1478x832fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Features126/v4/9a/31/b3/9a31b32d-49b2-883c-4980-d21c4a54ca61/99152498-54bf-4672-a902-6b6785530333.lsr/1478x832fe.webp" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <h3>Crime Thrillers</h3>
+        <div id="container7">
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/UPoQbHoPte_TFJXEvKIIsw/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/AmQ1cNEzc1DMKH25B5J9aQ/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/dbEKo7rp5RGNNDrCbA7AUQ/738x416.webp" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <h3>Heart-Touching Tales</h3>
+        <div id="container8">
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Ro6cUnMcHLf3sEVL38YlRg/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/zRCSBlp0LjwClRXsjyDNYQ/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/k-4X4dDwJrtXlsgr1VI_0w/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/xwiVfxV1l5Tfy6-1uQ25_Q/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/DCj5c2CndQsWCj9zkGGa5Q/738x416.webp" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <h3>Daring Adventure</h3>
+        <div id="container9">
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/xwiVfxV1l5Tfy6-1uQ25_Q/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/AmQ1cNEzc1DMKH25B5J9aQ/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Iz8wdsRXYRysnRRCY0yMrA/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/KS0pkmrVEdO4uYZA5CpRZA/738x416.webp" alt="">
+            </div>
+        </div>
+        <hr>
+        <h3>Join the Conversation</h3>
+        <div id="container10">
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/a99v9iRDYcIGof0CvxUUoA/1478x832.webp" alt="">
+                <h5>COMEDY</h5>
+                <h4>The Problem With Jon Stewart</h4>
+                <p1>The survivor of a brutal attack investigates a murder thats linked to her assault</p1>
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/PzRfPYv8-A3pM1Uafiv1qQ/1478x832.webp" alt="">
+                <h5>TALK SHOW</h5>
+                <h4>The Oprah Conversation</h4>
+                <p1>The survivor of a brutal attack investigates a murder thats linked to her assault</p1>
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/fS85BR5uGUlTFLXLAWAMsg/739x416.webp" alt="">
+                <h5>THRILLER</h5>
+                <h4>Shining Girls</h4>
+                <p1>The survivor of a brutal attack investigates a murder thats linked to her assault</p1>
+            </div>
+            <div>
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/uBU112xIP48X2tW5EbpGGQ/1478x832.webp" alt="">
+                <h5>THRILLER</h5>
+                <h4>Shining Girls</h4>
+                <p1>The survivor of a brutal attack investigates a murder thats linked to her assault</p1>
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/izP6zMmzs-m3VCjcOvM-DQ/1478x832.webp" alt="">
+                <h5>THRILLER</h5>
+                <h4>Shining Girls</h4>
+                <p1>The survivor of a brutal attack investigates a murder thats linked to her assault</p1>
+            </div>
+        </div>
+        <hr>
+
+        <h3>Creatures & Critters</h3>
+        <div id="container11">
+            <div>
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/owNSUO3F109RC75YDPMY7A/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/_Kq-GgPdDxxqWtSZ9GbHug/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/StRHuSLsy2WhrdoPNZ07xQ/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/2lfdtvo9bvduvVLrbcASow/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/6f5y-DYx9UvvcJ-gpqAufw/738x416.webp" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <div id="container12">
+            <img src="https://th.bing.com/th/id/R.d7345de83b441651f5d697bd2b60858d?rik=X8sfiIUYLmKjcQ&riu=http%3a%2f%2fchandikeslerphotography.com%2fwp-content%2fuploads%2f2015%2f11%2fBest-Bloomington-IL-Family-photographer_7379-1024x683.jpg&ehk=mbc2g73SuK4BzF8tV7H1oPlQJsv39nSkwVO5l%2bQc03c%3d&risl=&pid=ImgRaw&r=0" alt="">
+         </div>
+         <hr>
+        
+         <h3>All Drama Series</h3>
+       <div id="container13">
+         <div>
+             <img src="https://is1-ssl.mzstatic.com/image/thumb/QiFf4rD5DY65HbtJUOjE7Q/738x416.webp" alt="">
+         </div>
+         <div>
+             <img src="https://is4-ssl.mzstatic.com/image/thumb/fiTyznFr4Rsvd25TNhffww/738x416.webp" alt="">
+         </div>
+         <div>
+             <img src="https://is1-ssl.mzstatic.com/image/thumb/lN-bUPh0Botn7U7jKgbnFg/738x416.webp" alt="">
+         </div>
+         <div>
+             <img src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp" alt="">
+         </div>
+         <div>
+             <img src="https://is1-ssl.mzstatic.com/image/thumb/Tb1jarRHaWN_SFiMjZcDHw/738x416.webp" alt="">
+         </div>
+        </div>
+        <hr>
+
+        <h3>Shining Girls is here</h3>
+        <p2>Elisabeth Moss stars in this suspenseful new series.</p2>
+        <div id="container14">
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/29/f9/fe/29f9feb9-8b7b-62f5-c4cf-1c24eb1ed819/a33dd6f2-c96b-4946-8185-41248989e8e3.lsr/739x416fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/29/be/62/29be62a9-a365-6cb3-b98e-30075fa8e4ab/ed3ed3d2-9081-43a2-8514-0a8a321d334b.lsr/739x416fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Features116/v4/80/7b/03/807b037d-ab94-828b-320a-2ac4cc49d820/6ae2bb4d-5541-40d5-9100-c1cb45728de7.lsr/739x416fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Features126/v4/d7/5a/74/d75a74d9-b0ab-b422-576a-339b265f2063/4c36abb2-056c-4910-a62b-33bd9b82105f.lsr/1478x832fe.webp" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <h3>Fun for All</h3>
+        <div id="container15">
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/OTpiwskuTeqtsWQm6JZGVQ/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/vElmOL1u_pwE-YiCQsXncg/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/UtRuOihF2zNFPo4g5zUwdA/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/StRHuSLsy2WhrdoPNZ07xQ/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/guRFN8wTcsEevaCqEl9RBA/738x416.webp" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <h3>CODA: Oscar Winner---Best Picture</h3>
+        <p2>The historic film won cinema's highest prize.</p2>
+        <div id="container16">
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/6f/b7/62/6fb7628d-679f-17db-dbf6-ac52a7debb06/d97eccb1-2dbf-45b5-a35d-452d9496715f.lsr/1478x832fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/Features112/v4/de/3a/28/de3a2812-29b3-1e25-7941-a99ecb0e327c/851040fe-d937-4c50-b7d2-1188d59a022e.lsr/1478x832fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/Features116/v4/4d/5e/12/4d5e12e1-9063-1e07-62be-b209b75401ff/19aac7af-1170-4a01-9f9e-b281b54f78df.lsr/1478x832fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/6e/6b/c5/6e6bc5c0-0329-5915-f402-3dd9e31b0ad1/0b0c78ef-1abb-44c5-af22-d7f46c5425f1.lsr/1478x832fe.webp" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <h3>All Nonfiction Series</h3>
+        <div id="container19">
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/q15eqXAa_XH-L0KIDkPBJA/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/PzRfPYv8-A3pM1Uafiv1qQ/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/GwU4Qm-NLXeNi7M5bxpX-g/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/a99v9iRDYcIGof0CvxUUoA/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/qAk-30MspnyIG9hVKJ1qKQ/738x416.webp" alt="">
+            </div>
+        </div>
+        <hr>
+
+
+        <h3>All Comedy Series</h3>
+        <div id="container17">
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/dbEKo7rp5RGNNDrCbA7AUQ/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/RHDyosPjHXJc01IiulkQSg/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/rZ34KsuVSjdutVP-0HO95A/738x416.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/_VWBeTzPLn6LeyUjlTaSiQ/738x416.webp" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <h3>Kids and Family</h3>
+        <p2>Discover shows and movies filled with wonder and imagination.</p2>
+        <div id="container18">
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/Features126/v4/0f/57/ed/0f57edb0-0bb1-75e7-dfca-d556ec3b9bcf/97464ff5-54bb-4031-8a4c-3958f2d33fb9.lsr/1478x832fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/Features116/v4/40/e4/3a/40e43a6a-fa61-07b3-a77a-11c622f938fd/U0YtVFZBLVVTQS1BVFZQbHVzX0tpZHMtQnJpY2tfMi5sc3I.lsr/1478x832fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/e7/7f/6d/e77f6d2a-f6c5-8c95-0d06-89c7e6edb080/U0YtVFZBLVVTQS1BVFZQbHVzX0tpZHMtQnJpY2tfMy5sc3I.lsr/1478x832fe.webp" alt="">
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Features116/v4/f9/81/8f/f9818faf-8b61-a76a-3398-acf53238cacf/U0YtVFZBLVVTQS1BVFZQbHVzX0tpZHMtQnJpY2tfNC5sc3I.lsr/1478x832fe.webp" alt="">
+            </div>
+        </div>
+        <hr>
+
+           <div id="foot">
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.2FWZ6BdliZ4E6dKzHBqrPQHaEc?pid=ImgDet&rs=1" alt="">
+            </div>
+            
+                <h8>Watch Apple TV+ here or anywhere.</h8>
+                <br>
+                <br>
+                <p3>Find Apple TV+ on the Apple TV app, available on Apple devices, smart TVs, and more.</p3>
+                <br>
+                <br>
+                <div>
+                <p4>See all supported divices ></p4>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <img src="https://th.bing.com/th/id/R.fa5e67376018e06bd8ffb06b3129a717?rik=7G91umXpvhJBjg&riu=http%3a%2f%2f1000logos.net%2fwp-content%2fuploads%2f2016%2f10%2fapple-emblem.jpg&ehk=oZn9asOkaHE7jnq1KK2bsdCC3PpQvx52gN9eXh7e294%3d&risl=&pid=ImgRaw&r=0" alt="">
+                </div>
+               
+</body>
+</html>
+
+<!-- <script>
+ localStorage.setItem("container2", JSON.stringify(container2arr));
+      // redirect to applied jobs
+      window.location.href = "nextpage";
+    
+</script> -->
+
+<!-- <script>
+    function location(){
+        window.location.pathname="nextpage.html"
+        alert("welcome to the nextpage")
+    }
+</script> -->
